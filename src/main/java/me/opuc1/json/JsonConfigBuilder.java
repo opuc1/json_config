@@ -13,7 +13,7 @@ public class JsonConfigBuilder {
     private final File file;
     private final JsonConfig config;
 
-    public void checkFile() {
+    public void makeParent() {
         File parent = file.getParentFile();
         if (!parent.exists()) parent.mkdirs();
     }
